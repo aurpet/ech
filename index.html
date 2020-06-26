@@ -33,7 +33,9 @@
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Apie mus</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Paslaugos</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Kainos</a></li>
+          <li class="nav-item"><a class="nav-link"  data-toggle="modal" href="#modalKainos">Kainos</a></li>
+
+
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Kontaktai</a></li>
         </ul>
       </div>
@@ -131,8 +133,10 @@
       </div>
     </div>
   </section>
+
   <!-- About-->
-  <section class="page-section" id="about">
+
+  <!-- <section class="page-section" id="about">
     <div class="container">
       <div class="text-center">
         <h2 class="section-heading text-uppercase">Kainos</h2>
@@ -140,7 +144,7 @@
       </div>
       <p>visas kunas 100 €</p>
     </div>
-  </section>
+  </section> -->
 
   <!-- Contact-->
   <section class="page-section" id="contact">
@@ -167,7 +171,7 @@
           <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <div class="col-lg-4 text-lg-right">
-          <a class="mr-3" href="#!">Privacy Policy</a>
+          <a class="mr-3" href="#!">Privatumo politika</a>
           <a href="#!">Terms of Use</a>
         </div>
       </div>
@@ -333,6 +337,35 @@
       </div>
     </div>
   </div>
+
+<!-- modal kainos -->
+  <div class="portfolio-modal modal fade" id="modalKainos" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <!-- Project Details Go Here-->
+                <h2 class="text-uppercase">Paslaugų kainos</h2>
+                <p class="item-intro text-muted">Turint gydytojo siuntimą paslaugos nemokammos</p>
+                <img class="img-fluid d-block mx-auto" src="assets/img/kainos.jpg" alt="" />
+                <p>Cia galima padaryti detalu aprasyma</p>
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times mr-1"></i>
+                  Uždaryti
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Bootstrap core JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
